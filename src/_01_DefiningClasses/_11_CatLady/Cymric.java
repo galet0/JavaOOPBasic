@@ -1,0 +1,18 @@
+package _01_DefiningClasses._11_CatLady;
+
+/**
+ * Created by User on 24.06.2016.
+ */
+public class Cymric extends Cat {
+    private double furLength;
+
+    public Cymric(String name, double furLength) {
+        super(name);
+        this.furLength = furLength;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("Cymric %s %.2f", this.name, this.furLength);
+    }
+}
